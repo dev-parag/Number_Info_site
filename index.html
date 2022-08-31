@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EvenOdd Checker</title>
+  <script src="scripts/numberInfo.js"></script>
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="icon" href="images/Code_tree.png" type="image/x-icon">
+</head>
+
+<body>
+  <div id="mainDiv">
+    <h1>Number Checker</h1>
+
+    <p>
+      A simple tool to check if a number is even or odd,
+      prime or not and is a perfect square or not.
+    </p>
+
+    <form onsubmit="return false">
+      <input class="input" name="numberInput" id="inp" type="number" placeholder="Input a number" value="0"
+        oninput="numberInfo(this.value)"><br>
+      <output name="resultOutput" id="out">
+        0 is an even number.<br>
+        0 is neither prime nor a composite number.<br>
+        0 is a perfect square, its square root is 0.
+      </output>
+    </form>
+
+    <hr>
+    
+    <footer>Made by: Kushal</footer>
+  </div>
+</body>
+
+</html>
