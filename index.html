@@ -22,16 +22,27 @@
 
     <form onsubmit="return false">
       <input class="input" name="numberInput" id="inp" type="number" placeholder="Input a number" value="0"
-        oninput="numberInfo(this.value)"><br>
-      <output name="resultOutput" id="out">
-        0 is an even number.<br>
-        0 is neither prime nor a composite number.<br>
+        oninput="numberInfo(this.value)">
+
+      <output class="out" name="resultOutput1" id="out1">
+        0 is an even number.
+      </output>
+
+      <hr id="hr1">
+
+      <output class="out" name="resultOutput2" id="out2">
+        0 is neither prime nor a composite number.
+      </output>
+
+      <hr id="hr2">
+
+      <output class="out" name="resultOutput3" id="out3">
         0 is a perfect square, its square root is 0.
       </output>
     </form>
 
-    <hr>
-    
+    <hr id="footerHr">
+
     <footer>Made by: Kushal</footer>
   </div>
 </body>

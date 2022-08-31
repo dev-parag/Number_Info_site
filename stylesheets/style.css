@@ -6,23 +6,22 @@
 }
 
 body {
-    background-color: var(--main_bg_color);
+    background-color: beige;
 }
 
 div {
     background-color: var(--div_bg_color);
-    border: 1px solid var(--div_bg_color);
+    border: 1px solid var(--main_bg_color);
     border-radius: 10px;
     display: grid;
-    /* justify-items: stretch; */
-    grid-template-columns: auto;
+    grid-template-columns:1fr 1fr 2fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        "header header header"
-        ".      para   .     "
-        ".      form   .     "
-        "hr     hr     hr    "
-        "footer footer footer";
+        "header header header header header"
+        ".      para   para   para   .     "
+        ".      .      form   .      .     "
+        "hr     hr     hr     hr     hr    "
+        "footer footer footer footer footer";
 }
 
 h1 {
@@ -45,7 +44,7 @@ p {
     font-size: large;
     grid-area: para;
     margin: 1%;
-    padding: 0.5em;
+    padding: 0.2em;
 }
 
 form {
@@ -58,8 +57,13 @@ form {
     grid-template-rows: auto;
     grid-template-areas:
         "input input"
-        "output output";
+        "out1  out1"
+        "hr1 hr1"
+        "out2 out2"
+        "hr2 hr2"
+        "out3 out3";
     margin: 1%;
+    padding: 0.2em;
 
 }
 
@@ -70,17 +74,42 @@ input {
     margin: 1%;
 }
 
-output {
+.out {
     background-color: var(--form_bg_color);
     border: 1px solid var(--form_bg_color);
     border-radius: 8px;
     color: black;
     font-size: medium;
-    grid-area: output;
     margin: 1%;
 }
 
-hr {
+#out1 {
+    grid-area: out1;
+}
+
+#out2 {
+    grid-area: out2;
+}
+
+#out3 {
+    grid-area: out3;
+}
+
+#hr1 {
+    grid-area: hr1;
+    border: none;
+    border-top: 2px solid;
+    margin: 1%;
+}
+
+#hr2 {
+    grid-area: hr2;
+    border: none;
+    border-top: 2px solid;
+    margin: 1%;
+}
+
+#footerHr {
     grid-area: hr;
     border: none;
     border-top: 3px double;

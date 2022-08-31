@@ -1,18 +1,21 @@
 function numberInfo(inputValue) {
-    let finalResult;
+    let primeResult;
+
 
     // Checking if the number is too big/small to calculate.
     if (inputValue > 1000000 || inputValue < -1000000) {
-        finalResult = "Number is too big to check. :("
+        primeResult = "Number is too big to check. :("
     }
 
     // Collecting all results to one result.
     else {
-        finalResult = evenOddChecker(inputValue) + "\n" + primeChecker(inputValue) + "\n" + perfectSquareChecker(inputValue)
+        primeResult = primeChecker(inputValue)
     }
 
     // Setting the output.
-    document.getElementById("out").innerText = finalResult
+    document.getElementById("out1").innerText = evenOddChecker(inputValue)
+    document.getElementById("out2").innerText = primeResult
+    document.getElementById("out3").innerText = perfectSquareChecker(inputValue)
 }
 
 function evenOddChecker(num) {
