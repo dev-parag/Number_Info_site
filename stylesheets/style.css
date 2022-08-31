@@ -98,14 +98,14 @@ input {
 #hr1 {
     grid-area: hr1;
     border: none;
-    border-top: 2px solid;
+    border-top: 1px solid;
     margin: 1%;
 }
 
 #hr2 {
     grid-area: hr2;
     border: none;
-    border-top: 2px solid;
+    border-top: 1px solid;
     margin: 1%;
 }
 
